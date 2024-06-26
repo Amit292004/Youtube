@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #FF0000;
+            color: #fff;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header .search-bar {
+            display: flex;
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+
+        header .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 2px 0 0 2px;
+        }
+
+        header .search-bar button {
+            padding: 10px;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            border-radius: 0 2px 2px 0;
+            cursor: pointer;
+        }
+
+        header .user-menu img {
+            width: 32px;
+            border-radius: 50%;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #fff;
+            border-right: 1px solid #ddd;
+            padding: 20px 0;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            padding: 10px 20px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .video-card {
+            display: flex;
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .video-card img {
+            width: 160px;
+            height: 90px;
+            border-radius: 4px;
+        }
+
+        .video-info {
+            margin-left: 10px;
+        }
+
+        .video-info h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MyTube</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+        <div class="user-menu">
+            <img src="user-icon.png" alt="User Icon">
+        </div>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Subscriptions</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Analytics</a></li>
+
+
+            </ul>
+        </aside>
+        <main class="content">
+            <div class="video-card">
+                <img src="tjumb.jpeg" alt="Thumbnail">
+                <div class="video-info">
+                    <h3>How to gain 1 Million Subscribers</h3>
+                    <p>Bounce Back Academy• 1M views • 1 week ago</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <img src="1.jpeg" alt="Thumbnail">
+                <div class="video-info">
+                    <h3>How to grow youtube Channel faster</h3>
+                    <p>Mr Indian Hacker • 5M views • 3 weeks ago</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <img src="2.jpeg" alt="Thumbnail">
+                <div class="video-info">
+                    <h3>Best Fonts in 2024</h3>
+                    <p>Techanical Guruji• 5000K views • 1 months ago</p>
+                </div>
+            </div><div class="video-card">
+                <img src="3.jpeg" alt="Thumbnail">
+                <div class="video-info">
+                    <h3>Top 5 free thumbnail template</h3>
+                    <p>Manoj Dey • 900K views • 2 days ago</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <img src="4.jpeg" alt="Thumbnail">
+                <div class="video-info">
+                    <h3>India's Best Teachers for IIT-JEE 2025</h3>
+                    <p>Unacademy• 50M views • 2 months ago</p>
+                </div>
+           
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 MyTube. All rights reserved.</p>
+    </footer>
+</body>
+</html>
